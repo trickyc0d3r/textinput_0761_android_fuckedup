@@ -15,6 +15,7 @@ import {
   Text,
   useColorScheme,
   View,
+  TextInput
 } from 'react-native';
 
 import {
@@ -86,8 +87,8 @@ function App(): React.JSX.Element {
           <Section title="Debug">
             <DebugInstructions />
           </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
+          <Section title="TextInput on android is fuckedup">
+            <TextInput style={{width:'100%',height:34,backgroundColor:'red}} onChangeText={console.log}/>
           </Section>
           <LearnMoreLinks />
         </View>
